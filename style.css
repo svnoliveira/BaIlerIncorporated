@@ -36,6 +36,7 @@ header section{
     display: flex;
     flex-direction: row;
     width: 100%;
+    align-items: center;
 }
 header .faixa{
     height: 50%;
@@ -99,9 +100,30 @@ main .heroImage{
 }
 main .heroImage img{
     height: auto;
+    background-size:cover;
+    width: 200vh;
+}
+.thumbnail-wrapper {
+    display:inline-block;
+    position:relative;
+}
+.thumbnail-wrapper button {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate3d(-50%, -50%, 0);
+    border: solid black 2px;
+    padding: 16px 8px;
+    background-color: rgba(160, 154, 154, 0.7);
+    border-radius: 25px;
+    transition: 0.6s;
+    cursor: pointer;
+}
+.thumbnail-wrapper button:hover {
+background-color: rgb(212, 198, 198);
 }
 main h1{
-    font-size: 3em;
+    font-size: 2em;
     font-weight: 300;
     margin: 6vh 0vh 12vh 0vh;
 }
@@ -131,7 +153,6 @@ main .design p{
 }
 
 main .design img{
-    background-color: blue;
     max-height: 19%;
     width: 50%;
 }
@@ -167,4 +188,9 @@ main .viverEmSaoBernado article .vidaBox{
 main .viverEmSaoBernado article .vidaBox p{
     text-align: justify;
     padding: 2vh;
+}
+@media screen and (max-width: 800px) {
+.thumbnail-wrapper button {
+display: none;
+}
 }
