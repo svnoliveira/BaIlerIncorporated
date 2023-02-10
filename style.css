@@ -2,6 +2,16 @@
 *{
     font-family: "Lato";
 }
+p{
+    font-size: 18px;
+    font-weight: 300;
+}
+@media screen and (max-width: 800px) {
+    p{
+        font-size: 14px;
+        font-weight: 300;
+    }
+}
 body{
     background-color: #f2f2f2;
     text-align: center;
@@ -98,7 +108,10 @@ main .design p{
     max-height: 14%;
     background: transparent;
     overflow: hidden;
+    text-align: justify;
+    margin: 0vh 3vh;
 }
+
 main .design img{
     background-color: blue;
     max-height: 19%;
@@ -107,4 +120,33 @@ main .design img{
 main .luxoEsossego{
 width: 100%;
 margin: auto;
+margin-top: 7vh;
+}
+main .viverEmSaoBernado{
+    max-width: 95%;
+    margin: auto;
+}
+main .viverEmSaoBernado figure{
+    display: flex;
+    justify-content: center;
+}
+main .viverEmSaoBernado article{
+    display: flex;
+}
+@media screen and (max-width: 800px) {
+    main .viverEmSaoBernado article{
+        display: block;
+    }
+}
+main .viverEmSaoBernado article .vidaBox{
+    max-width: 33%;
+}
+@media screen and (max-width: 800px) {
+    main .viverEmSaoBernado article .vidaBox{
+        max-width: 90%;
+    }
+}
+main .viverEmSaoBernado article .vidaBox p{
+    text-align: justify;
+    padding: 2vh;
 }
