@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+*{
+    font-family: "Lato";
+}
+body{
+    background-color: #f2f2f2;
+    text-align: center;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    max-height: 28vh;
+}
+header .logo{
+    display: flex;
+    max-height: 100%;
+    min-height: 28vh;
+    max-width: 15%;
+}
+header .logo img{
+    height: 100%;
+    width: 100%;
+    min-width: 0;
+}
+header section{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+header .faixa{
+    height: 50%;
+    width: 85%;
+    margin-right: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .faixa h1{
+    font-size: 2em;
+    font-weight: 300;
+}
+header .faixa nav ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+header .faixa nav ul li{
+    padding: 1vh;
+    margin: 0px 2px;
+    transition: 0.7s;
+    -webkit-box-shadow: -1px 2px 4px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 2px 4px 0px rgba(0,0,0,0.75);
+    box-shadow: -1px 2px 4px 0px rgba(0,0,0,0.75);
+    border-radius: 2px;
+}
+header .faixa nav ul li:hover{
+    background-color: #c0bed2;
+    cursor: pointer;
+}
+main h2{
+    font-size: 4em;
+    font-weight: 300;
+    margin: 2vh 0vh;
+}
+main h3{
+    font-weight: 300;
+    margin-bottom: 3vh;
+}
+main .heroImage{
+    margin: auto;
+    width: 90%;
+    height: 50%;
+}
+main h1{
+    font-size: 3em;
+    font-weight: 300;
+    margin: 6vh 0vh 12vh 0vh;
+}
+main .design{
+    max-height: 200vh;
+    display: flex;
+    flex-direction: column;
+}
+main .design figure{
+    background: transparent;
+    display: flex;
+    margin: -1vh 0vh;
+    overflow: hidden;
+}
+.rightbox{
+    flex-direction: row-reverse;
+}
+main .design p{
+    display: flex;
+    align-items: center;
+    max-width: 400px;
+    max-height: 14%;
+    background: transparent;
+    overflow: hidden;
+}
+main .design img{
+    background-color: blue;
+    max-height: 19%;
+    width: 50%;
+}
+main .luxoEsossego{
+width: 100%;
+margin: auto;
+}

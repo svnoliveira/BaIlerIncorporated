@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bailer & Hancock</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="galeria.css">
+    <link rel="stylesheet" href="lightbox.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/logo/1672348416810.png" alt="Bailer Logo">
+        </div>
+        <section>
+            <div class="faixa">
+                <h1>SOBRADO EM SÃO BERNADO DO CAMPO</h1>
+            </div>
+            <div class="faixa">
+                <nav>
+                    <ul>
+                        <li>Design</li>
+                        <li>Como é viver em São Bernado do Campo</li>
+                        <li>Entre em contato</li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+    </header>
+    <main>
+        <h2>SEU LOCAL DE FELICIDADE</h2>
+        <h3>Luxo e qualidade de vida inestimável</h3>
+        <figure class="heroImage">
+            <img src="img/heroimg.png" alt="Imagem do Sobrado">
+        </figure>
+        <h1>DESIGN MODERNO</h1>
+        <section class="design">
+            <figure>
+                <img src="img/design.jpg" alt="Design do sobrado">
+                <p>Como o imóvel é projetado em pavimentos superiores, sobra mais espaço 
+                    na área externa, que é melhor aproveitada com a implantação de equipamentos
+                    de lazer como piscina,  área gourmet e cultivo de jardim.</p>
+            </figure>
+                 <figure class="rightbox">
+                     <img src="img/interior.jpg" alt="interior do imóvel">
+                     <p>Dispõe de Garagem, sala / cozinha com balcão e acesso a área gourmet,
+                        escadas dão acesso ao andar térreo com 3 suítes.
+                        Acabamento em tijolo a vista e cimento queimado.
+                        Esquadrias e portas pretas</p>
+                </figure>
+            <figure>
+                <img src="img/gourmet.jpg" alt="Area Gourmet" >
+                <p>Área gourmet com churrasqueira e pergolado coberto de bambu trançado e
+                    fogueira á ceu aberto!</p>
+            </figure>
+                <figure class="rightbox">
+                    <img src="img/areasocial.jpg" alt="vista do jardim">
+                    <p>Na área social temos um pomar com muitas frutas e uma horta suspensa e uma piscina com borda infinita</p>
+                </figure>
+        </section>
+        <section class="luxoEsossego">
+            <div class="rowgaleria">
+                <div class="columngaleria">
+                    <img src="img/gourmet2.jpg" alt="Area Gourmet" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                    <img src="img/areasocial.jpg" alt="vista do jardim" onclick="openModal();currentSlide(1)" class="hover-shadow" >
+                    <img src="img/piscina.jpg" alt="Piscina" onclick="openModal();currentSlide(1)" class="hover-shadow" >
+                </div>
+                <div class="columngaleria">
+                    <img src="img/gourmet.jpg" alt="Area Gourmet" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                    <div class="luxoBox">
+                        <h2>Luxo e Sossego</h2>
+                    </div>
+                    <img src="img/heroimg.jpg"  alt="Exterior" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                    <img src="img/interior.jpg" alt="Sala / Cozinha" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                </div>
+                <div class="columngaleria">
+                    <img src="img/interior2.jpg" alt="Sala / Cozinha" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                    <img src="img/mainhall.jpg" alt="Jardim" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                    <img src="img/outside.jpg" alt="Exterior" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                </div>
+            </div>
+            <div id="myModal" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
+              
+                    <div class="mySlides">
+                        <div class="numbertext">1 / 9</div>
+                        <img src="img/gourmet2.jpg" alt="Area Gourmet" style="width:100%">
+                    </div>
+              
+                    <div class="mySlides">
+                        <div class="numbertext">2 / 9</div>
+                        <img src="img/areasocial.jpg" alt="vista do jardim" style="width:100%">
+                    </div>
+              
+                    <div class="mySlides">
+                        <div class="numbertext">3 / 9</div>
+                        <img src="img/piscina.jpg" alt="Piscina" style="width:100%">
+                    </div>
+                    <div class="mySlides">
+                      <div class="numbertext">4 / 9</div>
+                      <img src="img/gourmet.jpg" alt="Area Gourmet" style="width:100%">
+                    </div>
+                    <div class="mySlides">
+                        <div class="numbertext">5 / 9</div>
+                        <img src="img/heroimg.jpg" alt="Exterior" style="width:100%">
+                    </div>
+                    <div class="mySlides">
+                        <div class="numbertext">6 / 9</div>
+                        <img src="img/interior.jpg" alt="Interior" style="width:100%">
+                    </div>
+                    <div class="mySlides">
+                        <div class="numbertext">7 / 9</div>
+                        <img src="img/interior2.jpg" alt="Interior" style="width:100%">
+                    </div>
+                    <div class="mySlides">
+                        <div class="numbertext">8 / 9</div>
+                        <img src="img/mainhall.jpg" alt="Jardim" style="width:100%">
+                    </div>
+                    <div class="mySlides">
+                      <div class="numbertext">9 / 9</div>
+                      <img src="img/outside.jpg" alt="Exterior" style="width:100%">
+                    </div>
+                
+                <!-- Next/previous controls -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              
+                <!-- Caption text -->
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+              
+                <!-- Thumbnail image controls -->
+                <div class="column">
+                    <img class="demo" src="img/gourmet2.jpg" alt="Area Gourmet" onclick="currentSlide(1)" >
+                </div>
+              
+                <div class="column">
+                    <img class="demo" src="img/areasocial.jpg" alt="vista do jardim" onclick="currentSlide(2)">
+                </div>
+              
+                <div class="column">
+                    <img class="demo" src="img/piscina.jpg" alt="Piscina" onclick="currentSlide(3)">
+                </div>
+
+                <div class="column">
+                    <img class="demo" src="img/gourmet.jpg" alt="Area Gourmet" onclick="currentSlide(3)">
+                </div>
+
+                <div class="column">
+                    <img class="demo" src="img/heroimg.jpg" alt="Exterior" onclick="currentSlide(3)">
+                </div>
+
+                <div class="column">
+                    <img class="demo" src="img/interior.jpg" alt="Interior" onclick="currentSlide(3)">
+                </div>
+
+                <div class="column">
+                    <img class="demo" src="img/interior2.jpg" alt="Sala / Cozinha" onclick="currentSlide(3)">
+                </div>
+
+                <div class="column">
+                    <img class="demo" src="img/mainhall.jpg" alt="Andar Térreo" onclick="currentSlide(3)">
+                </div>
+
+                <div class="column">
+                    <img class="demo" src="img/outside.jpg" alt="Exterior" onclick="currentSlide(3)">
+                </div>    
+            </div>
+        </div>
+    </section>
+        <section class="viverEmSaoBernado">
+            <h1>Vida em São Bernado dos Campos</h1>
+            <figure>
+                <img src="" alt="">
+            </figure>
+            <p>vantagens de são Bernado</p>
+        </section>
+    </main>
+    <footer>
+        <div class="blackbox">
+            <h1>ENTRE EM CONTATO</h1>
+            <p>Rua bairro</p>
+            <p>email</p>
+            <p>telefone</p>
+        </div>
+        <div class="imgDoCliente">
+            <img src="" alt="">
+        </div>
+        <div class="rodape">
+            <h3>BAILER & Hancock INCORPORADORA</h3>
+            <div class="logo">
+                <img src="/logo/1672348416810.png" alt="Bailer Logo">
+            </div>
+            <div class="faixa">
+        </div>
+    </footer>
+    <script src="lightbox.js"></script>
+</body>
+</html>
