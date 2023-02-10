@@ -23,7 +23,7 @@
   @media screen and (max-width: 600px) {
     .columngaleria {
       flex: 100%;
-      max-width: 100%;
+      max-width: 50%;
     }
   }
   
