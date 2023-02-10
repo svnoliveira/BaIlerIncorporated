@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="http://bailerbrokers.imb.br/wp-content/uploads/2014/05/favicons.png">
     <title>Bailer & Hancock</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="reset.css">
@@ -15,15 +16,15 @@
             <div class="faixa" id="menu">
                 <nav>
                     <ul>
-                        <li>Saiba Mais</li>
-                        <li>Como é viver em São José dos Campos</li>
-                        <li>Entre em contato</li>
+                        <li><a href="#saibamais">Mais</a> </li>
+                        <li><a href="#viveremSJC"> Como é viver em São José dos Campos</a></li>
+                        <li><a href="#entreemcontato">Entre em contato</a></li>
                     </ul>
                 </nav>
             </div>
         <section>
             <div class="logo">
-                <img src="/logo/1672348416810.png" alt="Bailer Logo">
+                <a href="https://bailerbrokers.imb.br/contato/" target="blank"><img src="/logo/logo.png" alt="Bailer Logo"></a>
             </div>
             <div class="faixa" id="titulos">
                 <h1>SOBRADO INVERTIDO EM SÃO JOSÉ DOS CAMPOS</h1>
@@ -33,20 +34,22 @@
     <main>
         <figure class="heroImage">
             <div class="thumbnail-wrapper">
-                <button>
+                <button type="button" onclick="location.href='#saibamais'">
                     <h2>UM NOVO MODELO DE MORADIA</h2>
                     <h3>Clique Aqui</h3>
                 </button>
                 <img src="img/heroimg2.png" alt="Imagem do Sobrado">
             </div>
         </figure>
-        <h1>Trazendo a modernidade arrojada para uma characa no interior a 7 km. do centro de SÃO JOSÉ DOS CAMPOS.</h1>
+        <h1 id="saibamais">Trazendo a modernidade arrojada para uma characa no interior a 7 km. do centro de SÃO JOSÉ DOS CAMPOS.</h1>
         <section class="design">
             <figure>
                 <img src="img/design.jpg" alt="Design do sobrado">
-                <p>Como o imóvel é projetado em pavimentos superiores, sobra mais espaço 
-                    na área externa, que é melhor aproveitada com a implantação de equipamentos
-                    de lazer como piscina,  área gourmet e cultivo de jardim.</p>
+                <p>Sua casa sera 100% fora dos padrões e isso que a transforma em unica.
+                    Iniciando sendo um sobrado invertido, onde toda a descontração da casa acontecerá, sem envolvimento dos quartos, e falando em quartos, 03 suites,
+                     compostas por uma KING, para o casal e 02 Demis.
+
+                </p>
             </figure>
                  <figure class="rightbox">
                      <img src="img/interior.jpg" alt="interior do imóvel">
@@ -57,12 +60,11 @@
                 </figure>
             <figure>
                 <img src="img/gourmet.jpg" alt="Area Gourmet" >
-                <p>Área gourmet com churrasqueira e pergolado coberto de bambu trançado e
-                    fogueira á ceu aberto!</p>
+                <p>Area Gourmet no ROOFTOOP de quase 15 metros de altura, decorada com a vista permanente para o verde e 100% integrada com a sala e cozinha do imóvel, entregando uma churrasqueira com cobertura de BAMBU TRANÇADO nao impedindo os raios solares de se infiltrarem e uma fogueira aberta.</p>
             </figure>
                 <figure class="rightbox">
                     <img src="img/areasocial.jpg" alt="vista do jardim">
-                    <p>Na área social temos um pomar com muitas frutas e uma horta suspensa e uma piscina com borda infinita</p>
+                    <p>Na área social temos um pomar com muitas frutas e uma horta suspensa e uma piscina com borda infinita priorizando sempre o bem-estar, saúde e qualidade de vida</p>
                 </figure>
         </section>
         <section class="luxoEsossego">
@@ -174,7 +176,7 @@
             </div>
         </div>
         </section>
-        <section class="viverEmSaoBernado">
+        <section class="viverEmSaoBernado" id="viveremSJC">
             <h1>Vida em São José dos Campos</h1>
             <figure>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117381.88387503343!2d-45.95858145531486!3d-23.16348832284599!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cc4bb3858cc2e7%3A0xba25a33168f8c1!2sS%C3%A3o%20Jos%C3%A9%20dos%20Campos%2C%20Sao%20Jose%20dos%20Campos%20-%20State%20of%20S%C3%A3o%20Paulo!5e0!3m2!1sen!2sbr!4v1676037136736!5m2!1sen!2sbr" width="1200" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -215,22 +217,27 @@
         </section>
     </main>
     <footer>
-        <div class="blackbox">
-            <h1>ENTRE EM CONTATO</h1>
-            <p>Rua bairro</p>
-            <p>email</p>
-            <p>telefone</p>
-        </div>
-        <div class="imgDoCliente">
-            <img src="" alt="">
-        </div>
+        <section id="entreemcontato">
+            <div class="blackbox">
+                <div class="contatosbox">
+                    <h1>ENTRE EM CONTATO</h1>
+                    <p>Telefone:+55 (11) 93023-7590</p>
+                    <p>Telemóvel:+55 (47) 99920-2558</p>
+                    <p>Email:mkt.bailerbrokers@gmail.com</p>
+                </div>
+                <div class="logobox">
+                    <a href="https://bailerbrokers.imb.br/contato/" target="blank"><img src="/logo/logo2.png" alt="Bailer Logo"></a>
+                </div>
+            </div>
+            <div class="imgDoCliente">
+                <img src="img/imgdocliente.png" alt="Imagem do Cliente">
+            </div>
+        </section>
         <div class="rodape">
             <h3>BAILER & Hancock INCORPORADORA</h3>
             <div class="logo">
-                <img src="/logo/1672348416810.png" alt="Bailer Logo">
+                <a href="https://bailerbrokers.imb.br/contato/" target="blank"><img src="/logo/logo.png" alt="Bailer Logo"></a>
             </div>
-            <div class="faixa">
-        </div>
     </footer>
     <script src="lightbox.js"></script>
 </body>
