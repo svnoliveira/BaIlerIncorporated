@@ -48,7 +48,7 @@ header .faixa{
     align-items: flex-start;
 }
 header #menu{
-    background-color: rgb(160, 154, 154);
+    background-color: rgb(0, 0, 0);
     height: auto;
     width: 100%;
 }
@@ -59,6 +59,8 @@ header .faixa nav ul{
     justify-content: center;
 }
 header .faixa nav ul li{
+    color: white;
+    background-color: #a2c614;
     font-size: 23px;
     font-weight: 300;
     padding: 1vh;
@@ -70,7 +72,7 @@ header .faixa nav ul li{
     border-radius: 2px;
 }
 header .faixa nav ul li:hover{
-    background-color: #c0bed2;
+    background-color: #666668;
     cursor: pointer;
 }
 header section #titulos{
@@ -82,13 +84,18 @@ header section #titulos{
 }
 header section .faixa h1{
     padding-top: 3vh;
-    font-size: 2em;
-    font-weight: 300;
+    font-size: 34px;
+    font-weight: 400;
 }
 header section .faixa h2{
-    font-size: 1em;
+    font-size: 24px;
     font-weight: 300;
     margin: 0vh 0vh 2vh 0vh;
+}
+header section .faixa h2 span{
+    margin: 0px 6px;
+    border-right: rgb(161, 161, 161) solid 3px;
+    padding: 0px 8px;
 }
 header section .faixa h3{
     font-weight: 300;
@@ -109,20 +116,25 @@ main .heroImage img{
     position:relative;
 }
 .thumbnail-wrapper button {
+    color: white;
     position:absolute;
     top:50%;
     left:50%;
     transform: translate3d(-50%, -50%, 0);
-    border: solid black 2px;
-    padding: 16px 8px;
-    background-color: rgba(160, 154, 154, 0.7);
+    padding: 20px;
+    background-color: #a2c614;
     border-radius: 25px;
     transition: 0.6s;
     cursor: pointer;
 }
-.thumbnail-wrapper button:hover {
-background-color: rgb(212, 198, 198);
+.thumbnail-wrapper button h3{
+    font-weight: bold;
+    font-size: 20px;
 }
+.thumbnail-wrapper button:hover {
+background-color: rgb(59, 59, 59);
+}
+
 main h1{
     font-size: 2em;
     font-weight: 300;
@@ -217,6 +229,45 @@ footer .rodape .logo img{
     width: auto;
 }
 @media screen and (max-width: 800px) {
+    header .logo {
+        max-width: 30%;
+    }
+}
+@media screen and (max-width: 800px) {
+    header section {
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 800px) {
+    header section #titulos{
+        max-width: 100%;
+        margin-right: 0;
+    }
+}
+@media screen and (max-width: 800px) {
+    header section .faixa h2{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    header section .faixa h2 span{
+        border-right: 0;
+    }
+}
+@media screen and (max-width: 800px) {
+    header #menu {
+        display: none;
+        text-align: justify;
+    }
+}
+@media screen and (max-width: 800px) {
+    main {
+        margin-top: 190px;
+    }
+}
+@media screen and (max-width: 800px) {
     footer section{
         display: flex;
         flex-direction: column;
@@ -265,8 +316,8 @@ margin: 2px;
 }
 @media screen and (max-width: 600px) {
 main .design img {
-height: 136px;
-width: 88%;
-max-width: 25vh;
+    height: 100%;
+    width: 78%;
+    max-width: 41vh;
 }
 }
