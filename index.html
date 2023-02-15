@@ -10,8 +10,9 @@
     <title>Bailer & Haacke</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="galeria.css">
-    <link rel="stylesheet" href="lightbox.css">
+    <link rel="stylesheet" href="carrousel.css">
+<!--     <link rel="stylesheet" href="galeria.css"> -->
+<!--     <link rel="stylesheet" href="lightbox.css"> -->
 </head>
 <body>
     <header>
@@ -30,7 +31,7 @@
             </div>
             <div class="faixa" id="titulos">
                 <h1>SOBRADO INVERTIDO EM SJC Rua Panacéia</h1>
-                <h2><span>CASA DE CAMPO</span><span>R$ 589.000,00</span>Chacaras Pousada do Vale, SJC</h2>
+                <h2><span>CASA DE CAMPO</span><span>R$ 589.000,00</span>Chácaras Pousada do Vale, SJC</h2>
             </div>
         </section>
     </header>
@@ -44,13 +45,11 @@
                 <img src="img/Fachadas-Sobrado-R2-editado-.jpg" alt="Imagem do Sobrado">
             </div>
         </figure>
-        <h1 id="saibamais">Trazendo a modernidade arrojada para uma characa no interior a 7 km. do centro de SÃO JOSÉ DOS CAMPOS.</h1>
+        <h1 id="saibamais">Modernidade e conforto no campo a apenas 7 km do centro de São José dos Campos.</h1>
         <section class="design">
             <figure>
                 <img src="img/Fachada-Sobrado-Sozinho-editado-.jpg" alt="Design do sobrado">
-                <p>Sua casa sera 100% fora dos padrões e isso que a transforma em unica.
-                    Iniciando sendo um sobrado invertido, onde toda a descontração da casa acontecerá, sem envolvimento dos quartos, e falando em quartos, 03 suites,
-                     compostas por uma KING, para o casal e 02 Demis.
+                <p>Sua casa será completamente diferente do padrão, o que a torna única. Ela começa como um sobrado invertido, onde toda a descontração da casa acontecerá, sem envolver os quartos. Falando em quartos, há três suítes, sendo uma King para o casal e duas Demis.
 
                 </p>
             </figure>
@@ -63,7 +62,7 @@
                 </figure>
             <figure>
                 <img src="img/Pergolado-Ang-1-Noturno-editado-.jpg" alt="Area Gourmet" >
-                <p>Area Gourmet no ROOFTOOP de quase 15 metros de altura, decorada com a vista permanente para o verde e 100% integrada com a sala e cozinha do imóvel, entregando uma churrasqueira com cobertura de BAMBU TRANÇADO nao impedindo os raios solares de se infiltrarem e uma fogueira aberta.</p>
+                <p>Área Gourmet no ROOFTOOP de quase 15 metros de altura, decorada com a vista permanente para o verde e 100% integrada com a sala e cozinha do imóvel, entregando uma churrasqueira com cobertura de BAMBU TRANÇADO nao impedindo os raios solares de se infiltrarem e uma fogueira aberta.</p>
             </figure>
                 <figure class="rightbox">
                     <img src="img/Pomar-editado-.jpg" alt="vista do jardim">
@@ -71,24 +70,68 @@
                 </figure>
         </section>
         <section class="luxoEsossego" id="galeriadeimagens">
-            <div class="rowgaleria">
-                <div class="columngaleria">
-                    <img src="img/gourmet2.jpg" alt="Fachada" onclick="openModal();currentSlide(1)" class="hover-shadow">
-                    <img src="img/areasocial.jpg" alt="vista do jardim" onclick="openModal();currentSlide(1)" class="hover-shadow" >
-                    <img src="img/heroimg.jpg"  alt="Exterior" onclick="openModal();currentSlide(1)" class="hover-shadow">
-                </div>
-                <div class="columngaleria">
-                    <img src="img/gourmet.jpg" alt="Area Gourmet" onclick="openModal();currentSlide(1)" class="hover-shadow">
-                    <img src="img/piscina.jpg" alt="Piscina" onclick="openModal();currentSlide(1)" class="hover-shadow" >
-                    <img src="img/interior.jpg" alt="Sala / Cozinha" onclick="openModal();currentSlide(1)" class="hover-shadow">
-                </div>
-                <div class="columngaleria">
-                    <img src="img/interior2.jpg" alt="Sala / Cozinha" onclick="openModal();currentSlide(1)" class="hover-shadow">
-                    <img src="img/mainhall.jpg" alt="Jardim" onclick="openModal();currentSlide(1)" class="hover-shadow">
-                    <img src="img/outside.jpg" alt="Exterior" onclick="openModal();currentSlide(1)" class="hover-shadow">
-                </div>
-            </div>
-            <div id="myModal" class="modal">
+            <section class="carousel" aria-label="Gallery">
+                <ol class="carousel__viewport">
+                  <li id="carousel__slide1"
+                      tabindex="0"
+                      class="carousel__slide">
+                    <div class="carousel__snapper"><img  class="centralizacao" src="img/Fachada-Sobrado-Sozinho-editado-.jpg" alt="Entrada">
+                      <a href="#carousel__slide4"
+                         class="carousel__prev">Go to last slide</a>
+                      <a href="#carousel__slide2"
+                         class="carousel__next">Go to next slide</a>
+                    </div>
+                  </li>
+                  <li id="carousel__slide2"
+                      tabindex="0"
+                      class="carousel__slide">
+                    <div class="carousel__snapper"><img  class="centralizacao" src="img/Pergolado-Ang-1-Noturno-editado-.jpg" alt=""></div>
+                    <a href="#carousel__slide1"
+                       class="carousel__prev">Go to previous slide</a>
+                    <a href="#carousel__slide3"
+                       class="carousel__next">Go to next slide</a>
+                  </li>
+                  <li id="carousel__slide3"
+                      tabindex="0"
+                      class="carousel__slide">
+                    <div class="carousel__snapper"><img  class="centralizacao" src="img/Pomar-editado-.jpg" alt=""></div>
+                    <a href="#carousel__slide2"
+                       class="carousel__prev">Go to previous slide</a>
+                    <a href="#carousel__slide4"
+                       class="carousel__next">Go to next slide</a>
+                  </li>
+                  <li id="carousel__slide4"
+                      tabindex="0"
+                      class="carousel__slide">
+                    <div class="carousel__snapper"><img  class="centralizacao" src="img/Fachadas-Sobrado-R2-editado-.jpg" alt=""></div>
+                    <a href="#carousel__slide3"
+                       class="carousel__prev">Go to previous slide</a>
+                    <a href="#carousel__slide1"
+                       class="carousel__next">Go to first slide</a>
+                  </li>
+                </ol>
+                <aside class="carousel__navigation">
+                  <ol class="carousel__navigation-list">
+                    <li class="carousel__navigation-item">
+                      <a href="#carousel__slide1"
+                         class="carousel__navigation-button">Go to slide 1</a>
+                    </li>
+                    <li class="carousel__navigation-item">
+                      <a href="#carousel__slide2"
+                         class="carousel__navigation-button">Go to slide 2</a>
+                    </li>
+                    <li class="carousel__navigation-item">
+                      <a href="#carousel__slide3"
+                         class="carousel__navigation-button">Go to slide 3</a>
+                    </li>
+                    <li class="carousel__navigation-item">
+                      <a href="#carousel__slide4"
+                         class="carousel__navigation-button">Go to slide 4</a>
+                    </li>
+                  </ol>
+                </aside>
+              </section>
+<!--             <div id="myModal" class="modal">
                 <span class="close cursor" onclick="closeModal()">&times;</span>
                 <div class="modal-content">
               
@@ -131,16 +174,16 @@
                       <img src="img/outside.jpg" alt="Exterior" style="width:100%">
                     </div>
                 
-                <!-- Next/previous controls -->
+                
                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                 <a class="next" onclick="plusSlides(1)">&#10095;</a>
               
-                <!-- Caption text -->
+                
                 <div class="caption-container">
                     <p id="caption"></p>
                 </div>
               
-                <!-- Thumbnail image controls -->
+                
                 <div class="column">
                     <img class="demo" src="img/gourmet2.jpg" alt="Fachada" onclick="currentSlide(1)" >
                 </div>
@@ -177,7 +220,7 @@
                     <img class="demo" src="img/outside.jpg" alt="Exterior" onclick="currentSlide(3)">
                 </div>    
             </div>
-        </div>
+        </div> -->
         </section>
         <section class="viverEmSaoBernado" id="viveremSJC">
             <h1>Vida em São José dos Campos</h1>
@@ -218,6 +261,9 @@
             </article>
             
         </section>
+        <section class="pagamento">
+            R$ 589.000,00  - 10 A 20% ENTRADA - ENTRADA PARCELADA DIRETO COM A CONSTRUTORA - SALDO FINANCIAMENTO BANCÁRIO
+        </section>
     </main>
     <footer>
         <section id="entreemcontato">
@@ -237,11 +283,10 @@
             </div>
         </section>
         <div class="rodape">
-            <h3>BAILER & Haacke INCORPORADORA</h3>
+            <h3>BAILER & HAACKE INCORPORADORA</h3>
             <div class="logo2">
                 <a href="https://bailerbrokers.imb.br/contato/" target="blank"><img src="/img/bailer.png" alt="Bailer"></a>
             </div>
     </footer>
-    <script src="lightbox.js"></script>
 </body>
 </html>
