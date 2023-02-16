@@ -187,6 +187,38 @@ main .viverEmSaoBernado figure{
 main .viverEmSaoBernado article{
     display: flex;
 }
+main #pagamento{
+    display: flex;
+    margin-bottom: 10vw;
+}
+main #pagamento img{
+    max-width: 50%;
+}
+main #pagamento .dealBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+}
+main #pagamento .dealBox ul{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    border: 4px black solid;
+    border-top: 30px black solid;
+    width: 40vh;
+    height: 50vh;
+    padding: 3vh;
+    border-radius: 20%;
+
+}
+main #pagamento .dealBox ul h2{
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
 footer {
     display: flex;
     flex-direction: column;
@@ -319,5 +351,20 @@ main .design img {
     height: 100%;
     width: 78%;
     max-width: 41vh;
+}
+}
+@media screen and (max-width: 800px) {
+main #pagamento img{
+    max-width: 95%;
+}
+}
+@media screen and (max-width: 800px) {
+main #pagamento{
+    display: block;
+}
+}
+@media screen and (max-width: 800px) {
+footer .blackbox{
+    padding-top: 10vh;
 }
 }
